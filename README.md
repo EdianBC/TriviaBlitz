@@ -1,6 +1,6 @@
-**Welcome to TriviaBattles: The Ultimate Showdown of Wits!**
+**Welcome to TriviaBlitz**
 
-Get ready to face off in the most electrifying trivia competition ever! In **TriviaBattles**, you and your friends will battle head-to-head in a fast-paced quiz showdown where every second counts. Who will be the quickest to buzz in and claim the right to answer? 
+Get ready to face off in the most electrifying trivia competition ever! In **TriviaBlitz**, you and your friends will battle head-to-head in a fast-paced quiz showdown where every second counts. Who will be the quickest to buzz in and claim the right to answer? 
 
 With our real-time multiplayer system, the host controls the pace, throwing out questions while contestants race to be the first to respond. Only the sharpest minds and fastest fingers will emerge victorious!
 
