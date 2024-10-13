@@ -42,13 +42,22 @@ def fetch_questions(amount=10, category=None, difficulty=None, qtype=None):
 
 # Main function to interact with the user
 def main():
-    # Show available categories
-    categories = fetch_categories()
     
+    # Display welcome message
+    print("Welcome to the TriviaBlitz!")
+
+    # Ask how many competitors are playing
+    num_players = int(input("How many players are playing? (1-n): "))
+    players = []
+    for i in range(num_players):
+        name = input(f"Enter the name of player {i+1}: ")
+        players.append(name)
+
     # Ask the user to input parameters
     amount = int(input("\nHow many questions do you want? (1-50): "))
     
     # Select category
+    categories = fetch_categories()
     print("\nSelect a category (leave blank for random):")
     category_input = input("Category ID: ")
     category = int(category_input) if category_input else None
@@ -74,7 +83,7 @@ def main():
             # Unescape HTML entities in the question and answers
             question_text = html.unescape(question['question'])
             correct_answer = html.unescape(question['correct_answer'])
-            print(f"Question {i+1}: {question_text}")
+            print(f"[{i+1}] {players[i%num_players]}'s turn: {question_text}")
 
             # Show options after pressing space key
             input()
